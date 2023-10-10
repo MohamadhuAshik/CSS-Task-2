@@ -100,15 +100,36 @@ a:hover:not(.active){
     background-color: yellowgreen;
     color: black;
 }
-#create .create{
+#create .create form{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     border: 2px solid black;
-    width: 20%;
+    width: 200%;
 }
 
+#head {
+    display: flex;
+    flex-wrap: wrap;
+    color: blue;
+    justify-content:space-between;
+    align-content: center;
+    padding: 10px;
+}
+#product .product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    align-content:space-around;
 
+}
+.product img {
+    margin-left: 10px;
+}
 
 

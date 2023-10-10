@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+         $("#img1").mouseenter(function(){
+             var img=$("#img1");
+             img.animate({height:"300px",width:"300px"},"slow");
+           });
+         
+           });
+    </script>
+
+</head>
+
+<body>
+    <div id="head">
+    <h3>SHOP</h3>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="LOGIN.html" target="_blank">Login</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="container" id="product">
+        <div class="product">
+            <div>
+                <img id="img1" src="./images/dress 1.jpg"alt="img"><br>
+                <div style="text-align: center;">
+                    prize:100<br>
+                <a href="#" type="button">Add Cart</a>
+                </div>
+            </div>
+            <div>
+                <img id="img2" src="./images/dress2.jpg" alt="img"><br>
+                <a href="#" type="button">Add Cart</a>
+            </div>
+            <div>
+                <img id="img3" src="./images/dress3.jpg" width="180px" alt="img"><br>
+                <a href="#" type="button">Add Cart</a>
+            </div>
+            <div>
+                <img id="img4" src="./images/dress3.jpg" width="180px" alt="img"><br>
+                <a href="#" type="button">Add Cart</a>
+            </div>
+            <div>
+                <img id="img5" src="./images/dress3.jpg" width="180px" alt="img"><br>
+                <a href="#" type="button">Add Cart</a>
+            </div>
+            <div>
+                <img id="img6" src="./images/dress3.jpg" width="180px" alt="img"><br>
+                <a href="#" type="button">Add Cart</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

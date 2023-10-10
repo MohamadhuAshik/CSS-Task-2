@@ -6,34 +6,72 @@
     <title>Create Account</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-          $("#btn").click(function(){
-            alert("plese Enter the Values");
-          });
+   <!--<script>
+      $(document).ready(function(){
+        $("#btn").click(function(){
+          alert("plese Enter the Values");
         });
-    </script>
+      });
+   </script>-->
 </head>
 <body>
+  <script>
+    function validate(){
+      var fName = document.getElementById("fName");
+      var lName = document.getElementById("lName");
+      var mobile = document.getElementById("number");
+      var email = document.getElementById("email");
+      var nPass = document.getElementById("nPass");
+      var cPass = document.getElementById("cPass");
+
+      if(fName.value =="" || lName.value ==""|| email.value =="" || nPass.value ==""|| cPass.value ==""){
+           alert("No Blank Values Allowded");
+           return false;
+      }else {
+        true;
+      }
+    }
+  </script>
+   <div id="head">
+    <h3>SHOP</h3>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="LOGIN.html" target="blank" class="active">Login</a></li>
+        </ul>
+    </nav>
+  </div>
     <div class="container" id="create">
         <div class="create">
+          <form onsubmit="return validate()" action="index.html">
         <label for="Create Account">Create Account</label><br>
         <label for="fname">First Name</label>
-        <input type="text" placeholder="Enter Your First Name"><br>
+        <input type="text" id="fName" placeholder="Enter Your First Name"><br>
+
         <label for="lname">Last Name</label>
-        <input type="text" placeholder="Enter Your Last Name"><br>
+        <input type="text" id="lName" placeholder="Enter Your Last Name"><br>
+
         <label for="gender">Gender</label>
         <div><input type="radio">Male <input type="radio">Female</div><br>
+
         <label for="mobile">Mobile No</label>
-        <input type="number" placeholder="Enter Your Mobile No"><br>
+        <input type="number" id="number" placeholder="Enter Your Mobile No"><br>
         <label for="Email id">Email ID</label>
-        <input type="email" placeholder="Enter Your Email ID"><br>
+        <input type="email" id="email" placeholder="Enter Your Email ID"><br>
+
         <label for="password">Enter Password</label>
-        <input type="password" placeholder="Enter Your New Password"><br>
+        <input type="password" id="nPass" placeholder="Enter Your New Password"><br>
+
         <label for="Password">Confirm Your Password</label>
-        <input type="password" placeholder="Re enter Your Password"><br>
-        <input type="button" id="btn" value="Submit">
+        <input type="password" id="cPass" placeholder="Re enter Your Password"><br>
+
+        <input type="submit" id="btn" value="Submit" onclick="validate()">
+
+        </form>
         </div>
     </div>
+    
 </body>
 </html>
